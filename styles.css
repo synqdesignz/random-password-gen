@@ -1,0 +1,59 @@
+/*Overall body of webpage*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/*Container for the generator*/
+.generate {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*Button diabled color*/
+button:disabled {
+    background-color: rgb(194, 194, 194);
+    opacity: 0.6;
+}
+
+
+/*Hide and Show Copy Message*/
+#copy-message {
+    display: none;
+    color: green;    
+}
+
+#copy-message.show{
+    display: block;
+    opacity: 1;
+}
+
+/*Hide and Show Fail to copyMessage*/
+#fail-message {
+    display: none;
+    color: red; 
+}
+
+#fail-message.show{
+    display: block;
+    opacity: 1;
+}
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>Password Generator</title>
+    <link rel = "icon" type = "image/png" href = "lock.png">
+    <link rel = "stylesheet"  href = "styles.css">
+    <script src = "scripts.js"></script>
+</head>
+
+<body>
+    <div class = "generate">
+        <h2>Random Password Generator</h2>
+        <input type = "text"  id = "password" readonly>
+        <button onclick = "generatePassword()">Generate Password</button>
+        <button id = "copybttn" onclick = "copyPassword()" disabled>Copy</button>
+        <p id = "copy-message">Copied to clipboard!</p>
+        <p id = "fail-message">Failed to copy password.</p>
+
+    </div>
+    </div>
+</body>
+
+<footer>
+    <h2>Created By Romessio</h2>
+</footer>
+
+</html>
