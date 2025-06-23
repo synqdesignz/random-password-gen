@@ -1,59 +1,93 @@
-/*Overall body of webpage*/
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-/*Container for the generator*/
-.generate {
-    max-width: 400px;
-    margin: 50px auto;
-    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f2027; 
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
-input {
-    width: 80%;
-    padding: 10px;
+
+.generate {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     text-align: center;
-    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
 }
-button {
-    margin-top: 10px;
-    padding: 10px;
-    cursor: pointer;
+
+.generate h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+#password {
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #00ffcc;
 }
-/*Button diabled color*/
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #00b894;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #019875;
+}
+
 button:disabled {
-    background-color: rgb(194, 194, 194);
-    opacity: 0.6;
+    background-color: #555;
+    cursor: not-allowed;
 }
 
+#copy-message, #fail-message {
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
 
-/*Hide and Show Copy Message*/
 #copy-message {
-    display: none;
-    color: green;    
+    color: #00ff7f;
 }
 
-#copy-message.show{
-    display: block;
-    opacity: 1;
-}
-
-/*Hide and Show Fail to copyMessage*/
 #fail-message {
-    display: none;
-    color: red; 
+    color: #ff4d4d;
 }
 
-#fail-message.show{
-    display: block;
-    opacity: 1;
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
 }
-
-
 
